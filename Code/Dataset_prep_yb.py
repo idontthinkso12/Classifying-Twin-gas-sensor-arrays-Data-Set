@@ -136,19 +136,3 @@ def test_accuracy_all(dp:Dataset_prep, test_size_proportions = [0.6, 0.5, 0.4, 0
             f.write(str(res))
         f.close
 
-
-
-if __name__ == '__main__':
-    for ele in [50]:
-        d1 = Dataset_prep(ele)
-        d1.compress_dataset([i for i in range(5)])
-
-#    ori_folder = '../data1'
-#    folder_path = './cls_data'
-#    dp = Dataset_prep()
-#    dp.compress_dataset(ori_folder,300)
-#    dp.filter_data(folder_path)
-#    dp.construct_trainX(folder_path)
-#    dp.construct_trainy(folder_path)
-    
-#    dp.load_trainX('./trainingdata1.txt')
